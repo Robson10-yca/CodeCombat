@@ -6,7 +6,7 @@
 def attack(target):
     if target  and target.type!='sand-yak':
         if (hero.distanceTo(target) > 10):
-            hero.move(target.pos)
+            hero.moveXY(target.pos)
         elif (hero.isReady("bash")):
             hero.bash(target)
         elif (hero.canCast('chain-lightning', target)):
